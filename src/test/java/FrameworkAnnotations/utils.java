@@ -43,8 +43,8 @@ public class utils extends FrameworkAnnotations {
 	public List<WebElement> ListOfWebElement(By locator){
 		
 		System.out.println("This will return list of all the webelements");
-		
-		return null; 
+		List<WebElement> allElem= driver.findElements(locator);
+		return allElem; 
 		
 	}
 
