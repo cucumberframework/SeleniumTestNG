@@ -1,7 +1,10 @@
 package FrameworkAnnotations;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -34,6 +37,15 @@ public class utils extends FrameworkAnnotations {
 		
 		
 		}
+	}
+	
+	
+	public List<WebElement> ListOfWebElement(By locator){
+		
+		System.out.println("This will return list of all the webelements");
+		
+		return null; 
+		
 	}
 
 	public boolean isElementDisplayed(By locator) {
