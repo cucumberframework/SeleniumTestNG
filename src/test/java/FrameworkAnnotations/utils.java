@@ -31,6 +31,8 @@ public class utils extends FrameworkAnnotations {
 	public void click(By locator) {
 		if(explicitWait(locator)) {
 		driver.findElement(locator).click();
+		
+		
 		}
 	}
 
