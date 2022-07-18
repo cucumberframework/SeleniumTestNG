@@ -39,10 +39,12 @@ public class Alerts {
 		System.out.println(act.getText());
 		act.dismiss();*/
 		driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
-		Alert act=driver.switchTo().alert();
+		Thread.sleep(10000);
+		driver.close();
+		/*Alert act=driver.switchTo().alert();
 		Thread.sleep(3000);
 		System.out.println(act.getText());
-		act.dismiss();
+		act.dismiss();*/
 		
 		
 		
