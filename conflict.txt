@@ -1,2 +1,4 @@
 Preprod generated Conflict
 Master Conflict
+
+new Conflict details
