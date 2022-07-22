@@ -1,6 +1,7 @@
 package TestCases;
 
 import java.io.IOException;
+import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.bcel.classfile.InnerClass;
@@ -21,14 +22,17 @@ import FrameworkAnnotations.utils;
 @Listeners(FrameworkAnnotations.class)
 public class TC55 extends utils {
 
-	@Test(dataProvider = "getTestData")
-	public void login(String username, String password) throws IOException, InterruptedException {
+	@Test(dataProvider = "getData",dataProviderClass=FrameworkAnnotations.class)
+	public void login(Hashtable<String,String > table) throws IOException, InterruptedException {
+		
+	System.out.println(table);
+		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		System.out.println(prop.getProperty("browser"));
 		maximize();
 		navigate("https://login.salesforce.com/");
-		SendKeys(By.id("username"), username);
-		SendKeys(By.id("password"),password);
+	//	SendKeys(By.id("username"), username);
+		//SendKeys(By.id("password"),password);
 		click(By.id("Login"));
 
 		boolean present = isElementDisplayed(By.linkText("Home"));
@@ -42,17 +46,6 @@ public class TC55 extends utils {
 
 	}
 
-	@DataProvider
-	public Object[][] getTestData() {
-		Object[][] data = new Object[2][2];
-
-		data[0][0] = "rbrahulbarapatre@gmail.com";
-		data[0][1] = "Ra9892338563@";
-		data[1][0] = "Test@9892";
-		data[1][1] = "PasswordTest123";
-
-		return data;
-
-	}
+	
 
 }
