@@ -26,13 +26,12 @@ public class TC55 extends utils {
 	public void login(Hashtable<String,String > table) throws IOException, InterruptedException {
 		
 	System.out.println(table);
-		table.get("userName"); 
+		//table.get("userName"); 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		System.out.println(prop.getProperty("browser"));
 		maximize();
-		navigate("https://login.salesforce.com/");
-	//	SendKeys(By.id("username"), username);
-		//SendKeys(By.id("password"),password);
+		navigate(table.get("url"));
+	SendKeys(By.xpath("//), keysToSend);
 		click(By.id("Login"));
 
 		boolean present = isElementDisplayed(By.linkText("Home"));
