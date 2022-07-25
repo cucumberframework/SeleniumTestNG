@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45894" started-at="2022-07-25T19:23:59 IST" finished-at="2022-07-25T19:24:45 IST">
+  <suite name="Default suite" duration-ms="38275" started-at="2022-07-25T19:44:45 IST" finished-at="2022-07-25T19:45:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45894" started-at="2022-07-25T19:23:59 IST" finished-at="2022-07-25T19:24:45 IST">
+    <test name="Default test" duration-ms="38275" started-at="2022-07-25T19:44:45 IST" finished-at="2022-07-25T19:45:24 IST">
       <class name="TestCases.TC55">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestCases.TC55@b59d31]" name="beforeSuite" is-config="true" duration-ms="491" started-at="2022-07-25T19:23:58 IST" finished-at="2022-07-25T19:23:59 IST">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:TestCases.TC55@b59d31]" name="beforeSuite" is-config="true" duration-ms="311" started-at="2022-07-25T19:44:45 IST" finished-at="2022-07-25T19:44:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestCases.TC55@b59d31]" name="beforeTest" is-config="true" duration-ms="4" started-at="2022-07-25T19:23:59 IST" finished-at="2022-07-25T19:23:59 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestCases.TC55@b59d31]" name="beforeTest" is-config="true" duration-ms="2" started-at="2022-07-25T19:44:45 IST" finished-at="2022-07-25T19:44:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestCases.TC55@b59d31]" name="beforeClass" is-config="true" duration-ms="1" started-at="2022-07-25T19:23:59 IST" finished-at="2022-07-25T19:23:59 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:TestCases.TC55@b59d31]" name="beforeClass" is-config="true" duration-ms="1" started-at="2022-07-25T19:44:45 IST" finished-at="2022-07-25T19:44:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:TestCases.TC55@b59d31]" name="beforeMethod" is-config="true" duration-ms="5479" started-at="2022-07-25T19:24:00 IST" finished-at="2022-07-25T19:24:06 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:TestCases.TC55@b59d31]" name="beforeMethod" is-config="true" duration-ms="3853" started-at="2022-07-25T19:44:46 IST" finished-at="2022-07-25T19:44:50 IST">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="login(java.util.Hashtable)[pri:0, instance:TestCases.TC55@b59d31]" name="login" duration-ms="36775" started-at="2022-07-25T19:24:06 IST" data-provider="getData" finished-at="2022-07-25T19:24:42 IST">
+        <test-method status="PASS" signature="login(java.util.Hashtable)[pri:0, instance:TestCases.TC55@b59d31]" name="login" duration-ms="31813" started-at="2022-07-25T19:44:50 IST" data-provider="getData" finished-at="2022-07-25T19:45:22 IST">
           <params>
             <param index="0">
               <value>
@@ -41,19 +41,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.TC55@b59d31]" name="afterMethod" is-config="true" duration-ms="1806" started-at="2022-07-25T19:24:43 IST" finished-at="2022-07-25T19:24:45 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.TC55@b59d31]" name="afterMethod" is-config="true" duration-ms="1352" started-at="2022-07-25T19:45:22 IST" finished-at="2022-07-25T19:45:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestCases.TC55@b59d31]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-07-25T19:24:45 IST" finished-at="2022-07-25T19:24:45 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:TestCases.TC55@b59d31]" name="afterClass" is-config="true" duration-ms="0" started-at="2022-07-25T19:45:24 IST" finished-at="2022-07-25T19:45:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestCases.TC55@b59d31]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-07-25T19:24:45 IST" finished-at="2022-07-25T19:24:45 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:TestCases.TC55@b59d31]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-07-25T19:45:24 IST" finished-at="2022-07-25T19:45:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestCases.TC55@b59d31]" name="afterSuite" is-config="true" duration-ms="777" started-at="2022-07-25T19:24:45 IST" finished-at="2022-07-25T19:24:45 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:TestCases.TC55@b59d31]" name="afterSuite" is-config="true" duration-ms="511" started-at="2022-07-25T19:45:24 IST" finished-at="2022-07-25T19:45:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
