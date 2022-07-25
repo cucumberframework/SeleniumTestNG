@@ -98,6 +98,8 @@ public class FrameworkAnnotations extends BaseTest implements ITestListener {
 
 	@BeforeMethod
 	public void beforeMethod(Method method) {
+		System.out.println("Opening the browser");
+		test=extent.startTest(testCaseName); 
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\drivers\\chromedriver.exe");
@@ -117,6 +119,7 @@ public class FrameworkAnnotations extends BaseTest implements ITestListener {
 		extent.endTest(test);
 		System.out.println("After Method");
 		if (driver != null) {
+			System.out.println("Closing the browser");
 			driver.quit();
 
 		}

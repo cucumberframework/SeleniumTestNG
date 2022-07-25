@@ -1,6 +1,8 @@
 package FrameworkAnnotations;
 
+import java.util.Hashtable;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -8,32 +10,43 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.relevantcodes.extentreports.LogStatus;
 import com.thoughtworks.selenium.webdriven.commands.IsElementPresent;
 
 public class utils extends FrameworkAnnotations {
 
-	public void maximize() {
+	public void maximize(Hashtable<String,String> table) {
 		if (driver != null) {
 			driver.manage().window().maximize();
+			FrameworkAnnotations.test.log(LogStatus.INFO, "Testdata used:" +table);
 		}
 	}
 
-	public void navigate(String url) {
+	public void navigate(Hashtable<String,String> table, String url) throws InterruptedException {
 		if (driver != null) {
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			maximize(table);
 			driver.get(url);
+			Thread.sleep(10000);
 		}
 	}
 
 	public void SendKeys(By locator, String keysToSend) {
 
 		if(explicitWait(locator)) {
-		driver.findElement(locator).sendKeys(keysToSend);
+			if(isElementDisplayed(locator)) {
+				driver.findElement(locator).sendKeys(keysToSend);
+			}
+		
 		}
 	}
 
 	public void click(By locator) {
 		if(explicitWait(locator)) {
-		driver.findElement(locator).click();
+			if(isElementDisplayed(locator)) {
+				driver.findElement(locator).click();
+			}
+		
 		
 		
 		}
