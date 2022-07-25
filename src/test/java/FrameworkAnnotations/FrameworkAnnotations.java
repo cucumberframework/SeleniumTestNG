@@ -44,7 +44,7 @@ public class FrameworkAnnotations extends BaseTest implements ITestListener {
 	public static Xls_reader xls; 
 	
 	public static Hashtable<String,String> testdata; 
-
+	public static Object[][]  obj;
 	@BeforeSuite
 	public static void beforeSuite() throws IOException {
 		init();
@@ -124,12 +124,12 @@ public class FrameworkAnnotations extends BaseTest implements ITestListener {
 	}
 
 	@DataProvider(name = "getData")
-	public static Hashtable<String,String> getTestData(Class testName) throws IOException {
+	public static Object[][] getTestData(Class testName) throws IOException {
 testCaseName=testName.getSimpleName().toString();
 xls=new Xls_reader(); 
-testdata=DataUtils.getTestData(xls, prop.getProperty("sheetName"), testCaseName);
+obj=DataUtils.getTestData(xls, prop.getProperty("sheetName"), testCaseName);
 
-return testdata; 
+return obj; 
 		
 
 /*return data;*/

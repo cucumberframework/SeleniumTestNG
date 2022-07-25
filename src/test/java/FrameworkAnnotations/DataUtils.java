@@ -10,7 +10,7 @@ public class DataUtils {
 	private static Hashtable<String,String> table; 
 	
 	
-	public static Hashtable<String, String> getTestData(Xls_reader xls, String sheetName, String testName) throws IOException{
+	public static Object[][] getTestData(Xls_reader xls, String sheetName, String testName) throws IOException{
 		
 		TestCaseStartnumber=xls.getRowData(testName); 
 		KeyStartRowNumber=TestCaseStartnumber+1; 
@@ -25,7 +25,9 @@ public class DataUtils {
 			table.put(keys, values); 
 			System.out.println(table);
 		}
-		return table;
+		return new Object[][] {
+			{table}
+		};
 	}
 
 }
