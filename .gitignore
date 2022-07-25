@@ -1,2 +1,12 @@
-ignore.txt
+ScreenshotsFolder/
+target/test-classes/TestCases/TC55.class
 Reports/
+
+Default test.html
+Default test.xml
+emailable-report.html
+index.html
+TEST-TestCases.TC55.xml
+methods-alphabetical.html
+methods.html
+testng-results.xml

@@ -3,6 +3,8 @@ package FrameworkAnnotations;
 import java.io.IOException;
 import java.util.Hashtable;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 public class DataUtils {
 	private static int TestCaseStartnumber; 
 	private static int KeyStartRowNumber;
@@ -24,7 +26,9 @@ public class DataUtils {
 			String values= xls.getCellData(sheetName, ValueStartRowNumber, cellnumber);
 			table.put(keys, values); 
 			System.out.println(table);
+			
 		}
+		
 		return new Object[][] {
 			{table}
 		};
