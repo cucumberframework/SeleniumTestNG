@@ -3,11 +3,11 @@ target/test-classes/TestCases/TC55.class
 Reports/
 target/
 
-test-output/Default suite/Default test.html
-test-output/Default suite/Default test.xml
-test-output/emailable-report.html
-test-output/index.html
-test-output/junitreports/TEST-TestCases.TC55.xml
-test-output/old/Default suite/methods-alphabetical.html
-test-output/old/Default suite/methods.html
-test-output/testng-results.xml
+Default test.html
+Default test.xml
+emailable-report.html
+index.html
+TEST-TestCases.TC55.xml
+methods-alphabetical.html
+methods.html
+testng-results.xml
