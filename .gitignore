@@ -1,6 +1,7 @@
 ScreenshotsFolder/
 target/test-classes/TestCases/TC55.class
 Reports/
+target/
 
 test-output/Default suite/Default test.html
 test-output/Default suite/Default test.xml
