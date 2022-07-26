@@ -18,12 +18,13 @@ public class utils extends FrameworkAnnotations {
 	public void maximize(Hashtable<String,String> table) {
 		if (driver != null) {
 			driver.manage().window().maximize();
-			FrameworkAnnotations.test.log(LogStatus.INFO, "Testdata used:" +table);
+			test.log(LogStatus.INFO, "Testdata used:" +table);
 		}
 	}
 
 	public void navigate(Hashtable<String,String> table, String url) throws InterruptedException {
 		if (driver != null) {
+			test.log(LogStatus.INFO, "Navigating to following URL:"+url);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			maximize(table);
 			driver.get(url);
@@ -35,6 +36,7 @@ public class utils extends FrameworkAnnotations {
 
 		if(explicitWait(locator)) {
 			if(isElementDisplayed(locator)) {
+				test.log(LogStatus.INFO, "Sending keys to following webelement:"+locator);
 				driver.findElement(locator).sendKeys(keysToSend);
 			}
 		
@@ -44,6 +46,7 @@ public class utils extends FrameworkAnnotations {
 	public void click(By locator) {
 		if(explicitWait(locator)) {
 			if(isElementDisplayed(locator)) {
+				test.log(LogStatus.INFO, "Click operation on following button:"+locator);
 				driver.findElement(locator).click();
 			}
 		
@@ -66,6 +69,7 @@ public class utils extends FrameworkAnnotations {
 		if (explicitWait(locator)) {
 			if (driver.findElement(locator).isDisplayed()) {
 				elementVisible=true; 
+				
 				return elementVisible;
 			} else {
 				
@@ -91,6 +95,7 @@ public class utils extends FrameworkAnnotations {
 	public String getText(By locator) {
 		String text = null;
 		if(isElementDisplayed(locator)) {
+			test.log(LogStatus.INFO, "Getting text of following webElement:"+locator);
 			 text=driver.findElement(locator).getText(); 
 		}
 		return text;

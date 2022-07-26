@@ -2,4 +2,5 @@ ignore.txt
 Reports/
 target/
 TestData.xlsx
-
+test-output/
+ScreenshotsFolder/
