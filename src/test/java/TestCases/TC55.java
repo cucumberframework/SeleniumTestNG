@@ -1,11 +1,12 @@
 package TestCases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.Hashtable;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.bcel.classfile.InnerClass;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,6 +1,8 @@
 package Web.SeleniumTestNG;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import FrameworkAnnotations.FrameworkAnnotations;
 

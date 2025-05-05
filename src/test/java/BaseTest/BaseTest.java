@@ -18,7 +18,7 @@ public class BaseTest {
 
 			try {
 				FileInputStream fis = new FileInputStream(
-						System.getProperty("user.dir")+"\\src\\test\\java\\ExternalFiles\\properties.properties");
+						System.getProperty("user.dir")+"//src//test//java//ExternalFiles//properties.properties");
 				prop.load(fis);
 				
 				System.out.println(prop.getProperty("browser"));

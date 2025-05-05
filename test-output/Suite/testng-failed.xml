@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Regresion(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Web.SeleniumTestNG.car">
+      <class name="Web.SeleniumTestNG.BasicAuth">
         <methods>
-          <include name="login"/>
+          <include name="m1"/>
         </methods>
-      </class> <!-- Web.SeleniumTestNG.car -->
+      </class> <!-- Web.SeleniumTestNG.BasicAuth -->
+      <class name="Web.SeleniumTestNG.WebDriverWaits">
+        <methods>
+          <include name="m1"/>
+        </methods>
+      </class> <!-- Web.SeleniumTestNG.WebDriverWaits -->
     </classes>
-  </test> <!-- Regresion(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

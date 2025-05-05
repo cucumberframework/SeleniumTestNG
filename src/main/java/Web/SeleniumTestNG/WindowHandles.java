@@ -17,8 +17,9 @@ public class WindowHandles {
 
 	@Test
 	public static void m1() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver",
-				"F:\\eclipse\\wrkspace\\DataDriven\\BrowserDrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
+				///Users/rahulbarapatre/git/SeleniumTestNG/drivers/chromedriver.exe
+				//"F:\\eclipse\\wrkspace\\DataDriven\\BrowserDrivers\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS); //implicite wait implementation
 		driver.get("https://www.naukri.com");

@@ -1,5 +1,9 @@
 package Web.SeleniumTestNG;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +16,7 @@ public class PriorityExample {
 	
 	@Test(priority=0)
 	public void loginToApp() { 
-		Assert.assertEquals(true, false);
+		AssertJUnit.assertEquals(true, false);
 		System.out.println("Login to the application");
 	}
 	
